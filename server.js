@@ -12,4 +12,10 @@ app.use(express.json());
 
 //Import routes
 
-var router =require()
+var router =require("./controllers/app-apiroutes.js");
+
+app.use(router);
+
+app.listen(PORT, function(){
+    console.log("Server Listening on: http://localhost:" + PORT);
+});
