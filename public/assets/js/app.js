@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Create a variable to reference the database
 var database = firebase.database();
-$( "#t" ).click(function() {
+$( "#" ).click(function() {
   handleSignUp()
 });
 function handleSignUp() {
