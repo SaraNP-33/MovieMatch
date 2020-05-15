@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var movieRating = sequelize.define("movieRating", {
+    var user = sequelize.define("movieRating", {
         id: DataTypes.integer,
         userName:  DataTypes.string,
         movieName: DataTypes.string,

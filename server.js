@@ -8,7 +8,7 @@ require("dotenv").config();
 
 app.use(express.static("public"));
 
-app.use(express.urlenconded({extended:true}));
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 
@@ -22,6 +22,8 @@ app.use(router);
 
 var db= require("./models");
 
+
+//syncing the database to the server. 
 
 db.sequelize.sync().then(function(){
 
