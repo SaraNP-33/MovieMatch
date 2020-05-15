@@ -8,7 +8,7 @@ require("dotenv").config();
 
 app.use(express.static("public"));
 
-app.use(express.urlenconded({extended:true}));
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 
