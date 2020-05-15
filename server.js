@@ -1,8 +1,8 @@
-var express =require("express");
+var express = require("express");
 
-var PORT =process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 
-var app =express();
+var app = express();
 
 require("dotenv").config();
 
@@ -14,13 +14,13 @@ app.use(express.json());
 
 //Import routes
 
-var router =require("./controllers/app-apiroutes.js");
+var router = require("./controllers/app-apiroutes.js");
 
 app.use(router);
 
 //import models for syncing
 
-var db= require("./models");
+var db = require("./models");
 
 
 //syncing the database to the server. 
