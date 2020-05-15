@@ -23,6 +23,8 @@ app.use(router);
 var db = require("./models");
 
 
+//syncing the database to the server. 
+
 db.sequelize.sync().then(function(){
 
     app.listen(PORT, function(){
