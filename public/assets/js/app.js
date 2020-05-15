@@ -12,13 +12,14 @@ $(document).ready(function() {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
 
 // Create a variable to reference the database
 // var database = firebase.database();
-$( ".form-signin form" ).on("#",function(event) {
+$( "#signUp" ).on("click",function(event) {
   event.preventDefault();
-  var email = $(".form-signin #inputEmail").val()
-  var password = $(".form-signin #inputPassword").val()
+  var email = $("#inputEmail").val().trim();
+  var password = $("#inputPassword").val().trim();
   // if (email.length < 4) {
   //   alert('Please enter an email address.');
   //   return;
@@ -31,6 +32,9 @@ $( ".form-signin form" ).on("#",function(event) {
   console.log("working")
   firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
     // logs user after its created
+    // var user1 = user;
+    database.push(user)
+
     console.log(user)
   }).catch(function(error) {
     
