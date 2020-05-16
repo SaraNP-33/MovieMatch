@@ -1,19 +1,21 @@
 $(document).ready(function () {
 
   // Your web app's Firebase configuration
+  
+   
   var firebaseConfig = {
-    apiKey: "AIzaSyAyfHQC6HnFxnurzR-Z-FZlD76j-q6_hmA",
-    authDomain: "project2-group6.firebaseapp.com",
-    databaseURL: "https://project2-group6.firebaseio.com",
-    projectId: "project2-group6",
-    storageBucket: "project2-group6.appspot.com",
-    messagingSenderId: "861468397116",
-    appId: "1:861468397116:web:5302a7bd7586a49a777d39"
+    apiKey: "AIzaSyCGgIX4WY0WHwubFmEPBaVlPjp9IZ9ITv8",
+    authDomain: "project-2-group6.firebaseapp.com",
+    databaseURL: "https://project-2-group6.firebaseio.com",
+    projectId: "project-2-group6",
+    storageBucket: "project-2-group6.appspot.com",
+    messagingSenderId: "459339776615",
+    appId: "1:459339776615:web:8f8be425a0d2e487250ac2",
+    measurementId: "G-JEGQGPFDYE"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  var database = firebase.database();
-
+  firebase.analytics();
 
   // Create a variable to reference the database
   // var database = firebase.database();
@@ -97,7 +99,7 @@ $(document).ready(function () {
       //If InvaildEmail or InvaildPassword error occurs then alert user
       if (errorCode === "6" || "7") {
         alert("Invailed Password Or Email.");
-        
+
       } 
       //Else alert errorMessage to user 
       else {
@@ -108,6 +110,6 @@ $(document).ready(function () {
       console.log(error);
 
     });
-  })
+  });
 
 });
