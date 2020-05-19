@@ -35,12 +35,12 @@ module.exports = function(sequelize, DataTypes) {
     });
   
     Movies.associate = function(models) {
-      models.Movies.hasMany(models.User, models.Votes, { onDelete: 'cascade' });
+      models.Movies.hasMany( models.Votes, { onDelete: 'cascade' });
   
   };
 
    Movies.associate = function(models) {
-       models.Movies.belongsTo(models.User, models.Votes, { onDelete: 'cascade' });
+       models.Movies.belongsTo(models.User,  { onDelete: 'cascade' });
    };
   
   return Movies;

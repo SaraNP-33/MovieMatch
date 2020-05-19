@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
     });
   
     Votes.associate = function(models) {
-      models.Votes.belongsTo(models.User, models.Movies, { onDelete: 'cascade' });
+      models.Votes.belongsTo(models.User, { onDelete: 'cascade' });
   
   };
   
