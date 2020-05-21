@@ -28,21 +28,22 @@ module.exports = function(sequelize, DataTypes) {
         movieYear: {
             type: DataTypes.INTEGER, 
             allowNull: false,
-        }, 
+        }
 
-        
+      
      
     });
-  
     Movies.associate = function(models) {
-      models.Movies.hasMany( models.Votes, { onDelete: 'cascade' });
+       Movies.hasMany( models.MovieUserVotes)
+      
+         
+    
+    };
+    return Movies; 
+};
   
-  };
-
-   Movies.associate = function(models) {
-       models.Movies.belongsTo(models.User,  { onDelete: 'cascade' });
-   };
+   
   
-  return Movies;
   
-  };
+  
+  
