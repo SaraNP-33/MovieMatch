@@ -1,4 +1,6 @@
-html,
+/* old login box */
+
+/* html,
 body {
   height: 100%;
 }
@@ -44,8 +46,9 @@ body {
 }
 body {
   padding-bottom: 20px;
-}
+} */
 
+/* nav bar CSS */
 .navbar {
   margin-bottom: 20px;
   position: fixed; /* Set the navbar to fixed position */
@@ -53,7 +56,7 @@ body {
   width: 100%; /* Full width */
 }
 
-
+/* main search bar on userPage CSS */
 body,html{
   height: 100%;
   width: 100%;
@@ -109,7 +112,7 @@ body,html{
 
 
 
-
+/* log in box CSS */
   body,
   html {
     margin: 0;
