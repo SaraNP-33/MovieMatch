@@ -33,8 +33,8 @@ router.get("/api/movies/:title", function(req,res){
     where:{title:req.params.title},
     include:[db.MoviesUserVotes]
   }).then(function(results){
-      if(results.lenght===0){
-          //query the axios 
+      if(results.length===0){
+    var query="http://www.omdbapi.com/?t="
 
       }else{
           res.json(results);
