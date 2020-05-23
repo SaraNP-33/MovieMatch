@@ -54,6 +54,10 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  /* background-color: rgb(67, 7, 139) !important; ***** */
+  background-color: rgb(207, 170, 3) !important;
+  border-bottom: 3px solid white;
+
 }
 
 /* main search bar on userPage CSS */
@@ -62,7 +66,7 @@ body,html{
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #e74c3c !important;
+  /* background: #e74c3c !important; */
   }
 
   .searchbar{
@@ -118,20 +122,62 @@ body,html{
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #60a3bc !important;
+    /* background: #60a3bc !important; */
+    /* background-color: rgb(15, 15, 15); */
+    /* background-color: goldenrod; **** */
+    /* background-color: rgb(252, 241, 217); */
+    background-color:   rgb(83, 38, 138);
   }
+
+
+element.style {
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.text-center {
+    text-align: center!important;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: rgb(255, 199, 16); ***** */
+    color: rgb(255, 199, 16);
+    text-align: left;
+    
+}
+
   .user_card {
     height: 400px;
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #f39c12;
+    /* background: #f39c12; */
+    /* background: rgb(182, 151, 15); */
+    background-image: url("../../assets/images/signin_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(70, 5, 5, 0.685), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
@@ -143,10 +189,19 @@ body,html{
     width: 170px;
     top: -75px;
     border-radius: 50%;
-    background: #60a3bc;
+    /* background: #60a3bc; */
+    /* background:   rgb(67, 7, 139); */
+    /* background:   rgb(67, 7, 139); ****** */
+    background:   rgb(224, 172, 28);
     padding: 10px;
     text-align: center;
   }
+
+  a {
+/* color:  rgb(175, 93, 243); ****** */
+color:  rgb(175, 93, 243);
+  }
+
   .brand_logo {
     height: 150px;
     width: 150px;
