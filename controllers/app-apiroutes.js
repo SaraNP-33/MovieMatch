@@ -10,7 +10,7 @@ var db=require("../models");
 //get to homepage -where signin and sign up are
 
 router.get("/", function(req,res){
-    res.sendFile(path.join(__dirname,"index.html"))
+    res.sendFile(path.join(__dirname,"../views/index.html"))
 
 });
 
