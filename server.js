@@ -20,7 +20,7 @@ app.use(passport.session()); // persistent login sessions
 
 //Import routes
 
-var router = require("./controllers/app-apiroutes.js");
+var router = require("./routes/app-apiroutes.js");
 
 app.use(router);
 
@@ -33,7 +33,7 @@ var db = require("./models");
 // Routes
 // =============================================================
 
-require("./controllers/auth-route")(app,passport);
+require("./Routes/auth-route")(app,passport);
 
 //load passport strategies
 require("./config/passport.js")(passport, db.User);
