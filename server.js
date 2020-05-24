@@ -21,8 +21,10 @@ app.use(passport.session()); // persistent login sessions
 //Import routes
 
 var router = require("./routes/app-apiroutes.js");
+var route = require("./routes/auth-route.js");
 
 app.use(router);
+app.use(route);
 
 //import models for syncing
 
@@ -33,7 +35,7 @@ var db = require("./models");
 // Routes
 // =============================================================
 
-require("./Routes/auth-route")(app,passport);
+// require("./Routes/auth-route")(app,passport);
 
 //load passport strategies
 require("./config/passport.js")(passport, db.User);
