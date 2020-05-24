@@ -14,6 +14,11 @@ router.get("/", function(req,res){
 
 });
 
+router.get("/signup/newuser", function(req,res){
+    res.sendFile(path.join(__dirname,"../views/userForm.html"))
+
+});
+
 //get to the users page
 router.get("/api/user", function(req,res){
 db.MoviesUserVotes.findAll({
