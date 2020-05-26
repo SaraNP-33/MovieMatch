@@ -1,4 +1,7 @@
-# MovieMatch 
+
+![alt text](https://github.com/SaraNP-33/MovieMatch/blob/master/public/assets/images/image(2).png)
+
+
 
 ## This App is a collaborative effort from 
   - [Sara Neves Pereia](https://www.linkedin.com/in/sara-neves-pereira-8b6509139/)
