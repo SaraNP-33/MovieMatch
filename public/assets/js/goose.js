@@ -25,5 +25,3 @@ const GOOSE = `
 function greet() {
   console.log(GOOSE)
 }
-
-export default greet 
